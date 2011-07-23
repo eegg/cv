@@ -8,4 +8,5 @@ main = interact $ join "" . map c
 c '’' = "'"
 c '–' = "-"
 c '…' = "..."
+c '‑' = "-" -- non-breaking hyphen
 c a   = [a]

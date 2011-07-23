@@ -14,7 +14,7 @@
 
 Skills
 
-     * An understanding of algorithmics and a comfortableness with formalism. I am familiar with Big‑O
+     * An understanding of algorithmics and a comfortableness with formalism. I am familiar with Big-O
        notation. I enjoy playing with and implementing algorithms for their own sake. I have an interest
        in formal verification, which is the topic of my MSc individual project.
      * An impeccable grasp of the English language. I write for pleasure, and enjoy communicating ideas
