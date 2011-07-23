@@ -1,6 +1,6 @@
 TOPDF = wkhtmltopdf --print-media-type --margin-top 2cm --margin-right 0 --margin-bottom 0 --margin-left 0
 
-TOTEXT = lynx -dump -width 110
+TOTEXT = lynx -dump -width 110 -nolist
 
 fromscratch: clean all
 
