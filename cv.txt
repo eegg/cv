@@ -79,7 +79,7 @@ Previous work and achievements
 
    This document is available at [56]http://eegg.github.com/cv/.
 
-   [57]Get the PDF
+   [57]Get the plaintext [58]Get the PDF
 
 References
 
@@ -139,4 +139,5 @@ References
   54. http://www.crgs.co.uk/
   55. http://www.young-enterprise.org.uk/
   56. http://eegg.github.com/cv/
-  57. file://localhost/home/james/inst/jobs/cv/cv.pdf
+  57. file://localhost/home/james/inst/jobs/cv/cv.txt
+  58. file://localhost/home/james/inst/jobs/cv/cv.pdf
