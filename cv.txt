@@ -2,10 +2,10 @@
 
    James Harrison Fisher
 
-   Birthdate October 1987
-    Address  Hammersmith, London, W12 7JN
-     Email   jameshfisher@gmail.com
-    Mobile   07951 498 897
+   Birth date October 1987
+    Address   Hammersmith, London, W12 7JN
+     Email    jameshfisher@gmail.com
+     Mobile   07951 498 897
 
 Skills
 
@@ -54,4 +54,4 @@ Previous work and achievements
 
    This document is available at http://eegg.github.com/cv/.
 
-   Get the plaintext Get the PDF
+   Get the plain text Get the PDF
