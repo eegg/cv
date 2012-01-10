@@ -3,7 +3,7 @@ module Make where
 
 import System.Process (readProcess)
 import Control.Monad.IO.Class (liftIO)
-import Development.Shake (shake, ShakeOptions(..), shakeOptions, (*>), system', want, need, Action)
+import Development.Shake (shake, ShakeOptions(..), shakeOptions, (*>), system', want, need, Action, writeFile')
 
 import ToAscii (toAscii)
 
@@ -27,7 +27,7 @@ main = shake shakeOptions{shakeFiles=".", shakeVerbosity=2, shakeParallel=1} $ d
   "cv.txt" *> \f -> do
     need ["index.html"]
     str <- toText "index.html"
-    liftIO $ writeFile f (toAscii str)
+    writeFile' f (toAscii str)
 
 --  "spellcheck" *> \f -> do
 --    let pws = "./aspell_exceptions.pws"
