@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-module Make where
+module Main where
 
 import System.Process (readProcess)
 import Control.Monad.IO.Class (liftIO)
