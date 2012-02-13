@@ -2,3 +2,6 @@
 .~lock.*
 ..database
 *.bak
+*.hi
+*.o
+make
