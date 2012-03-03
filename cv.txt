@@ -3,33 +3,36 @@
    James Harrison Fisher
 
    Birth date October 1987
-    Address   Colchester, Essex, CO3 3HN
+    Address   Colchester, Essex, CO3 3UZ
      Email    jameshfisher@gmail.com
      Mobile   07951 498 897
-
-Skills
-
-     * An impeccable grasp of the English language. I write for pleasure, and enjoy communicating ideas
-       with flair, clarity and concision.
-     * Organization. I manage my time and tasks effectively.
-     * An eye for aesthetics, design, and presentation. I adore understated typography, functional
-       communication, and interactive design. I can put this into practice on the web, in Photoshop, or
-       simply in letter-writing.
-     * Problem-solving and strategic thinking. I strive to eliminate routine tasks.
-     * Office suites (MS Office, OpenOffice, Google Docs). I am comfortable with document processing,
-       spreadsheets, presentations, and databases.
-     * I.T. administration, including operating systems (Windows, Linux) and networking (small-scale)
-     * Programming and computer science. I am happy using various languages including C++, Javascript,
-       and Haskell. I can develop modern web sites and applications.
 
 Education
 
    2006-9 Bachelor of Arts degree, with first-class honors, in History, at the University of York.
    2004-6    Achieved the following A-levels:
-          Grade               Subjects                           Institution
-          A     History, Computing, General Studies  Colchester Royal Grammar School
-          B     Physics, Mathematics, Art and Design CRGS (Art and Design at Grey Friars)
+          Grade    Subjects               Institution
+          A     History         Colchester Royal Grammar School
+          A     Computing       Colchester Royal Grammar School
+          A     General Studies Colchester Royal Grammar School
+          B     Physics         Colchester Royal Grammar School
+          B     Mathematics     Colchester Royal Grammar School
+          B     Art and Design  Grey Friars
    2002-4 Eleven GCSEs at Colchester Royal Grammar School.
+
+Skills
+
+     * Programming and computer science. I am happy using various languages including C++, Javascript,
+       and Haskell. I can develop modern web sites and applications.
+     * I.T. administration, including operating systems (Windows, Linux) and networking (small-scale)
+     * An impeccable grasp of the English language. I write for pleasure, and enjoy communicating ideas
+       with flair, clarity and concision.
+     * Problem-solving and strategic thinking. I strive to eliminate routine tasks.
+     * An eye for aesthetics, design, and presentation. I adore understated typography, functional
+       communication, and interactive design. I can put this into practice on the web, in Photoshop, or
+       simply in letter-writing.
+     * Office suites (MS Office, OpenOffice, Google Docs). I am comfortable with document processing,
+       spreadsheets, presentations, and databases.
 
 Previous work and achievements
 
