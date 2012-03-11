@@ -12,24 +12,35 @@ pdf from to = system' "wkhtmltopdf" $ opts ++ [from, to] where
     [ "--print-media-type"
     , "--margin-top", "2cm"
     , "--margin-right", "0"
-    , "--margin-bottom", "0"
+    , "--margin-bottom", "2cm"
     , "--margin-left", "0"
     ]
 
 toText :: FilePath -> Action String
 toText from = liftIO $ readProcess "lynx" ["-dump", "-width", "110", "-nolist", from] ""
 
+doPdf name f = need [name] >> pdf name f
+doTxt name f = do
+  need [name]
+  str <- toText name
+  writeFile' f (toAscii str)
+
+doM4 from to = do
+  need [from]
+  liftIO $ do
+    out <- readProcess "m4" [from] ""
+    writeFile to out
+
 main = shake shakeOptions{shakeFiles=".", shakeVerbosity=Loud, shakeThreads=4} $ do
-  let doPdf name f = need [name] >> pdf name f
+
+  "index.html"    *> doM4 "src/cs.html.m4"
+  "general/index.html" *> doM4 "src/general.html.m4"
+
   "cv.pdf"    *> doPdf "index.html"
-  "cv_cs.pdf" *> doPdf "index_cs.html"
+  "cv.txt"    *> doTxt "index.html"
 
-  "cv.txt" *> \f -> do
-    need ["index.html"]
-    str <- toText "index.html"
-    writeFile' f (toAscii str)
-
-
+  "general/cv.pdf" *> doPdf "general/index.html"
+  "general/cv.txt" *> doTxt "general/index.html"
 
 --  "spellcheck" *> \f -> do
 --    let pws = "./aspell_exceptions.pws"
@@ -37,4 +48,4 @@ main = shake shakeOptions{shakeFiles=".", shakeVerbosity=Loud, shakeThreads=4} $
 --    need [pws, "index.html"]
 --    system' "aspell" ["--lang=en_US", "--mode=html", "--personal="++(q pws), "check", "index.html"]
 
-  want ["cv.pdf", "cv.txt", "cv_cs.pdf"]
+  want ["cv.pdf", "general/cv.pdf", "cv.txt", "general/cv.txt"]

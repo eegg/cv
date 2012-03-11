@@ -24,7 +24,7 @@ prop = sattr "itemprop"
 
 mk n = mkelem n []
 
-obscure s = "mailt&#111;&#58;j&#97;&#37;6Des&#104;fi%73%6&#56;er&#64;gmail&#46;&#99;&#111;m"
+obscure s = s -- "mailt&#111;&#58;j&#97;&#37;6Des&#104;fi%73%6&#56;er&#64;gmail&#46;&#99;&#111;m"
 
 email e = mkelem "a" [sattr "href" ("mailto:"++e')] [txt e']
   where e' = obscure e'
@@ -142,4 +142,4 @@ rootEl = mkelem "html" []
     ]
   ]
 
-main = runX $ (root [] [rootEl]) >>> (writeDocument [withIndent yes] "index2.html")
+main = runX $ (root [] [rootEl]) >>> writeDocument [withIndent yes] "index2.html" 
