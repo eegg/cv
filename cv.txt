@@ -61,7 +61,7 @@ Previous work and achievements
      * Web design and maintenance for http://www.lexdenmontessori.com/.
 
    2010 Branding for Pembroke House (http://www.pembrokehouse.sc.ke/), a private Kenyan prep school. In
-   the words of their Commercial Director:
+   the words of their Commercial Director,
 
      James has worked with me on new brand designs for Harambee Schools Kenya, a charity and Pembroke
      House school, a prep school. In both cases his work was of the highest quality, and reflected a
@@ -73,9 +73,10 @@ Previous work and achievements
    Branding and web design for Harambee Schools Kenya (http://www.hsk.org.uk/), a charity building
    schools around Gilgil in rural Kenya.
 
-   GWS Media gave the site an award, commending its âplain, clear English; striking design, and
+   GWS Media gave the website an award, commending its âplain, clear English; striking design, and
    beautiful images.â To date, the new branding and website is known to have directly brought in
-   Â£53,000 of funding, including from UBM (the global media and comms giant) and HSBC.
+   Â£53,000 of funding, including from UBM (the global media and comms giant) and HSBC, who made HSK
+   their official corporate charity after finding their website.
    2009 Developing an internal database-driven system for managing care homes and CSCI reports for
    Caring Homes Ltd.
    2008 Various responsibilities at Caring Homes Ltd., including: accountancy and financial planning,
