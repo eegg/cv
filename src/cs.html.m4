@@ -1,7 +1,7 @@
 include(src/common/header.html)
 
 	<p class="profile">
-	  I am a developer and designer with a degree in History with first-class honours.
+	  I am a developer and designer soon to have an MSc in Computing Science.
 	  I like problems and will attack them until solved.
 	  I like to communicate in paint, print, and programming.
 	</p>
