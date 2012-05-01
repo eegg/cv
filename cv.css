@@ -1,4 +1,3 @@
-@import "common.css";
 span.TeX sub,span.LaTeX sub{position:relative;top:.2em;margin-left:-.1em}
 span.LaTeX sup{position:relative;font-size:80%;top:-.3em;margin-left:-.3em}
 #formats{position:fixed;bottom:.5cm;right:1cm;overflow:auto}
