@@ -1,9 +1,13 @@
 #!/usr/bin/env runhaskell
+{-# LANGUAGE OverloadedStrings #-}
+
 module Main where
 
 import System.Process (readProcess)
 import Control.Monad.IO.Class (liftIO)
 import Development.Shake (shake, ShakeOptions(..), shakeOptions, (*>), system', want, need, Action, writeFile', Verbosity(Loud))
+import Development.Shake.FilePath ((</>), takeDirectory1)
+import Text.Regex (mkRegex, matchRegexAll)
 
 import ToAscii (toAscii)
 
@@ -25,7 +29,16 @@ doTxt name f = do
   str <- toText name
   writeFile' f (toAscii str)
 
+m4deps content = case matchRegexAll (mkRegex "include\\(([^\\(\\)]+)\\)") content of
+  Nothing -> []
+  Just (_, _, rest, subs) -> subs ++ m4deps rest
+
+getM4deps :: FilePath -> IO [FilePath]
+getM4deps path = readFile path >>= return . m4deps
+
+
 doM4 from to = do
+  liftIO (getM4deps from) >>= need
   need [from]
   liftIO $ do
     out <- readProcess "m4" [from] ""
