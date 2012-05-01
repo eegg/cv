@@ -30,13 +30,13 @@ Skills
 
      * I have computing and I.T. experience of the following, with varying familiarity:
           + C++
-          + Scripting langs. (Python, PHP, JS)
-          + Functional langs. (Haskell)
-          + jQuery, jQuery UI, underscore
+          + Python, PHP, JS
+          + Haskell
+          + jQuery, jQuery UI
           + Apache, NodeJS, MVC (Django)
           + HTML5, CSS3, XML, JSON, &c.
-          + Revision control (git, svn)
-          + Testing (xUnit, QuickCheck)
+          + git, svn
+          + xUnit, QuickCheck
           + SQL, MySQL, PostgreSQL
           + T[E]X, L^AT[E]X
           + Linux, Windows
