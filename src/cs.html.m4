@@ -56,13 +56,7 @@ include(src/common/education.html)
 	    I enjoy playing with and implementing algorithms for their own sake.
 	  </li>
 	  <li>
-	    <strong>An impeccable grasp of the English language.</strong>
-	    I write for pleasure, and enjoy communicating ideas with flair, clarity and concision.
-	    I believe this is a prerequisite of being an effective programmer.
-	  </li>
-	  <li>
 	    <strong>An eye for aesthetics, design, and presentation.</strong>
-	    I adore understated typography, functional communication, and interactive design.
 	  </li>
 	  <li>
 	    <strong>Problem-solving and strategic thinking.</strong>

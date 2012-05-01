@@ -42,11 +42,7 @@ Skills
           + Linux, Windows
      * An understanding of algorithmics and a comfortableness with formalism. I am familiar with Big-O
        notation. I enjoy playing with and implementing algorithms for their own sake.
-     * An impeccable grasp of the English language. I write for pleasure, and enjoy communicating ideas
-       with flair, clarity and concision. I believe this is a prerequisite of being an effective
-       programmer.
-     * An eye for aesthetics, design, and presentation. I adore understated typography, functional
-       communication, and interactive design.
+     * An eye for aesthetics, design, and presentation.
      * Problem-solving and strategic thinking. I will thrive in an intellectually challenging workplace.
        I strive to eliminate routine tasks.
 
