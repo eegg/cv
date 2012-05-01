@@ -29,7 +29,7 @@ Education
 Skills
 
      * I have computing and I.T. experience of the following, with varying familiarity:
-          + Systems langs. (C, C++, Go, D)
+          + C++
           + Scripting langs. (Python, PHP, JS)
           + Functional langs. (Haskell)
           + jQuery, jQuery UI, underscore
