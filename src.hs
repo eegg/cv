@@ -1,6 +1,6 @@
 module Main where
 
-import Prelude hiding (span)
+import Prelude hiding (span, div)
 import Text.XML.HXT.Core (runX, ArrowXml, XmlTree, IOSLA, XIOState, mkelem, txt, sattr, root, writeDocument, withIndent, yes)
 import Control.Arrow ((>>>))
 
@@ -16,6 +16,10 @@ style media url = mkelem "link"
 cls c = sattr "class" c
 
 section = mkelem "section"
+
+div :: ArrowXml a => [a n XmlTree] -> [a n XmlTree] -> a n XmlTree
+div = mkelem "div"
+
 span = mkelem "span"
 strong s = mkelem "strong" [] [txt s]
 
@@ -54,6 +58,10 @@ topSection = section (item "http://data-vocabulary.org/Person")
       , attrVal [txt "Mobile"] [] [txt $ obscure "07951 498 897"]
       ]
     ]
+  ]
+
+aboutSection = section []
+  [
   ]
 
 skillsSection = section []
@@ -142,4 +150,4 @@ rootEl = mkelem "html" []
     ]
   ]
 
-main = runX $ (root [] [rootEl]) >>> writeDocument [withIndent yes] "index2.html" 
+main = runX $ (root [] [rootEl]) >>> writeDocument [withIndent yes] "index2.html"

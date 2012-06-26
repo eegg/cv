@@ -5,3 +5,17 @@ span.LaTeX sup{position:relative;font-size:80%;top:-.3em;margin-left:-.3em}
 #formats a:hover{opacity:1}
 p.profile{margin-top:1.3498312698764172em}
 div.endNote{font-style:italic;text-align:center;margin:5.399325079505669em 0 0 0}
+
+div.photo {
+    width: 120px;
+    height: 160px;
+    float: right;
+    background-image: url("images/me/front.png" );
+
+    -webkit-transition: background-image 0.5s;
+    -moz-transition: background-image 0.5s;
+    -o-transition: background-image 0.5s;
+}
+div.photo:hover {
+    background-image: url("images/me/side.png" );
+}
