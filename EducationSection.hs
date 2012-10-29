@@ -2,7 +2,7 @@ module EducationSection (educationSection) where
 
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Common (h2, h3, ul, strong, link, cls, section, attrVal, mk, trs, q)
-import Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation))
+import Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation, LinkCoursera, LinkCourseraScala, LinkCourseraCrypto))
 
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
@@ -13,12 +13,12 @@ educationSection = section [cls "educationSection"]
   , mkelem "table" [cls "firstColFixedWidth"]
     [ mk "tbody" $ trs
       [ attrVal [txt "Sep.–Nov. 2012"] []
-        [ q "Functional Programming Principles in Scala"
-        , txt " at Coursera. In progress."
+        [ mk "q" [ mkLink LinkCourseraScala ]
+        , txt " at ", mkLink LinkCoursera, txt ". In progress."
         ]
       , attrVal [txt "Nov.–Dec. 2012"] []
-        [ q "Cryptography"
-        , txt " at Coursera. In progress."
+        [ mk "q" [ mkLink LinkCourseraCrypto ]
+        , txt " at ", mkLink LinkCoursera, txt ". In progress."
         ]
       ]
     ]

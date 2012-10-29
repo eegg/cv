@@ -43,6 +43,9 @@ data Link
   | LinkCaringHomes
   | LinkGilgilTrust
   | LinkPembrokeHouse
+  | LinkCoursera
+  | LinkCourseraScala
+  | LinkCourseraCrypto
 
 mkLink l = case l of
   LinkYUDU                -> link "http://www.yudu.com/"                                     "YUDU Media"
@@ -85,3 +88,6 @@ mkLink l = case l of
   LinkCaringHomes         -> link "http://www.caringhomes.org/"                              "Caring Homes"
   LinkGilgilTrust         -> link "http://gilgiltrust.org.uk/"                               "The Gilgil Trust"
   LinkPembrokeHouse       -> link "http://www.pembrokehouse.sc.ke/"                          "Pembroke House"
+  LinkCoursera            -> link "https://www.coursera.org/"                                "Coursera"
+  LinkCourseraScala       -> link "https://www.coursera.org/course/progfun"                  "Functional Programming Principles in Scala"
+  LinkCourseraCrypto      -> link "https://www.coursera.org/course/crypto"                   "Cryptography"
