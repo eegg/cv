@@ -47,6 +47,7 @@ data Link
   | LinkCourseraScala
   | LinkCourseraCrypto
   | LinkMeLinkedIn
+  | LinkMeBitbucket
   | LinkMeGitHub
   | LinkMeReddit
 
@@ -95,5 +96,6 @@ mkLink l = case l of
   LinkCourseraScala       -> link "https://www.coursera.org/course/progfun"                  "Functional Programming Principles in Scala"
   LinkCourseraCrypto      -> link "https://www.coursera.org/course/crypto"                   "Cryptography"
   LinkMeLinkedIn          -> link "http://www.linkedin.com/profile/view?id=34422393"         "LinkedIn"
+  LinkMeBitbucket         -> link "https://bitbucket.org/eegg"                               "Bitbucket"
   LinkMeGitHub            -> link "http://github.com/eegg"                                   "GitHub"
   LinkMeReddit            -> link "http://www.reddit.com/user/Jameshfisher/"                 "Reddit"
