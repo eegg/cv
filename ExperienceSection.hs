@@ -40,14 +40,18 @@ gilgilTrust =
 
 pembrokeHouse =
   attrVal [txt "2010"] [] $
-  [ txt "Branding for "
-  , mk "strong" [mkLink LinkPembrokeHouse]
-  , txt " a private Kenyan prep school."
-  , txt " In the words of their Commercial Director,"
-  , mk "blockquote"
-    [ txt "James has worked with me on new brand designs for Harambee Schools Kenya ", em "(see below)"
-    , txt " a charity, and Pembroke House school, a prep school. In both cases his work was of the highest quality, and reflected a passion for design, but also for getting under the skin of the organisation he is designing for. I wouldn't hesitate to use James again for any design projects that I might have."
-    ] 
+  [ p
+    [ txt "Branding for "
+    , mk "strong" [mkLink LinkPembrokeHouse]
+    , txt " a private Kenyan prep school."
+    ]
+  , p
+    [ txt " In the words of their Commercial Director, "
+    , mk "q"
+      [ txt "James has worked with me on new brand designs for Harambee Schools Kenya ", em "(see below)"
+      , txt " a charity, and Pembroke House school, a prep school. In both cases his work was of the highest quality, and reflected a passion for design, but also for getting under the skin of the organisation he is designing for. I wouldn't hesitate to use James again for any design projects that I might have."
+      ]
+    ]
   ]
 
 hsk =
