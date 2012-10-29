@@ -1,3 +1,15 @@
+@import url("http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600");
+
+body {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2em;
+}
+
+h1,h2,h3,th,strong {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+}
+
 #formats{position:fixed;bottom:.5cm;right:1cm;overflow:auto}
 #formats a{float:right;clear:both;margin-top:1cm;opacity:.5;-webkit-transition:opacity .5s linear;-moz-transition:opacity .5s linear;-o-transition:opacity .5s linear;transition:opacity .5s linear}
 #formats a:hover{opacity:1}
