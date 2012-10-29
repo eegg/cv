@@ -7,10 +7,10 @@ import Links (mkLink, Link(LinkCRGS, LinkGreyFriars))
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
   [ h2 "Education"
-  , mkelem "table" [cls "firstColFixedWidth", sattr "summary" "Institutions James Fisher has studied at, listed in descending order of year (i.e., most recent first)"]
+  , mkelem "table" [cls "firstColFixedWidth"]
     [ mk "tbody" $ trs [ msc, ba, aLevels, gcses ] ]
   , h3 "Other courses"
-  , mkelem "table" [cls "firstColFixedWidth", sattr "summary" "Institutions James Fisher has studied at, listed in descending order of year (i.e., most recent first)"]
+  , mkelem "table" [cls "firstColFixedWidth"]
     [ mk "tbody" $ trs
       [ attrVal [txt "Sep.–Nov. 2012"] []
         [ q "Functional Programming Principles in Scala"

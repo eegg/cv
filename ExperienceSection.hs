@@ -7,8 +7,8 @@ import Links (mkLink, Link(LinkYUDU, LinkSoftwire, LinkJava, LinkEnterpriseJavaB
 experienceSection :: (ArrowXml a) => a n XmlTree
 experienceSection = section [cls "experienceSection"]
   [ h2 "Experience"
-  , mkelem "table" [cls "firstColFixedWidth", sattr "summary" "Jobs that James Fisher has done, listed in descending order of year (i.e., most recent first)"]
-    [ mk "body" $ trs [ yudu, lm, gilgilTrust, pembrokeHouse, hsk, caringHomesDB, caringHomesVarious ]
+  , mkelem "table" [cls "firstColFixedWidth"]
+    [ mk "tbody" $ trs [ yudu, lm, gilgilTrust, pembrokeHouse, hsk, caringHomesDB, caringHomesVarious ]
     ]
   ]
 
@@ -39,7 +39,7 @@ lm =
       , txt " The follies of schematizing, sorting, and cross-referencing paperwork led me towards the real power of the computer."
       ]
     , [ strong "Web design and maintenance", txt " for "
-      , mkelem "link" [sattr "href" "http://www.lexdenmontessori.com"] [txt "www.", strong "lexdenmontessori.com"]
+      , mkelem "a" [sattr "href" "http://www.lexdenmontessori.com"] [txt "www.", strong "lexdenmontessori.com"]
       , txt "."
       ]
     ]

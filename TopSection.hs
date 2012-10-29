@@ -6,7 +6,7 @@ import Common (h2, ul, strong, link, cls, section, attrVal, email, obscure, csv,
 topSection :: (ArrowXml a) => a n XmlTree
 topSection = section (item "http://data-vocabulary.org/Person")
   [ htmlSpan [sattr "style" "display: none;", prop "name"] [txt "James Harrison Fisher"]
-  , mkelem "table" [cls "firstColFixedWidth", sattr "summary" "Quick-reference attributes and values of James Harrison Fisher"]
+  , mkelem "table" [cls "firstColFixedWidth"]
     [ mk "tbody" $ trs
       [ attrVal [txt "Birth date"] [] [txt "October 1987"]
       , attrVal [txt "Address"] ([prop "address"]++(item "http://data-vocabulary.org/Address")) $ csv
