@@ -25,24 +25,10 @@ yudu =
 
 lm =
   attrVal [txt "2006–present"] [] $
-  [ txt "Director and Secretary of ", mk "strong" [mkLink LinkLexdenMontessori], txt ". "
-  , txt "In these roles I have overseen, among other things,"
-  , ul
-    [ [ strong "Business planning."
-      , txt " From the outset I have been involved in the company’s expansion and direction of growth. "
-      , txt "I understand the requirements and challenges of a small business."
-      ]
-    , [ strong "Market research and advertising", txt " in multiple media (print, web, radio, and others). "
-      , txt "I have learned, by success and failure, how to think from a customer’s perspective."
-      ]
-    , [ strong "Administration and secretarial duties."
-      , txt " The follies of schematizing, sorting, and cross-referencing paperwork led me towards the real power of the computer."
-      ]
-    , [ strong "Web design and maintenance", txt " for "
+  [ txt "Director and Secretary of ", mk "strong" [mkLink LinkLexdenMontessori], txt ", a nursery in Colchester. "
+  , txt "I have worked in business planning, market research and advertising, administration and secretarial duties, and web design and maintenance for "
       , mkelem "a" [sattr "href" "http://www.lexdenmontessori.com"] [txt "www.", strong "lexdenmontessori.com"]
       , txt "."
-      ]
-    ]
   ]
 
 gilgilTrust =
