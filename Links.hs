@@ -37,7 +37,12 @@ data Link
   | LinkSQL                 
   | LinkOracleDatabase      
   | LinkLinux               
-  | LinkWindows             
+  | LinkWindows
+  | LinkMScIndividualProjectPresentation
+  | LinkCSCI             
+  | LinkCaringHomes
+  | LinkGilgilTrust
+  | LinkPembrokeHouse
 
 mkLink l = case l of
   LinkYUDU                -> link "http://www.yudu.com/"                                     "YUDU Media"
@@ -75,3 +80,8 @@ mkLink l = case l of
   LinkOracleDatabase      -> link "http://www.oracle.com/uk/products/database"               "Oracle Database"
   LinkLinux               -> link "http://kernel.org/"                                       "Linux"
   LinkWindows             -> link "http://www.microsoft.com/uk/windows/"                     "Windows"
+  LinkMScIndividualProjectPresentation -> link "http://eegg.github.com/presentation/pres.html" "Verifying a balanced-tree index implementation in VeriFast"
+  LinkCSCI                -> link "http://en.wikipedia.org/wiki/CSCI"                        "CSCI reports"
+  LinkCaringHomes         -> link "http://www.caringhomes.org/"                              "Caring Homes"
+  LinkGilgilTrust         -> link "http://gilgiltrust.org.uk/"                               "The Gilgil Trust"
+  LinkPembrokeHouse       -> link "http://www.pembrokehouse.sc.ke/"                          "Pembroke House"

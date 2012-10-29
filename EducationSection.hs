@@ -2,7 +2,7 @@ module EducationSection (educationSection) where
 
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Common (h2, h3, ul, strong, link, cls, section, attrVal, mk, trs, q)
-import Links (mkLink, Link(LinkCRGS, LinkGreyFriars))
+import Links (mkLink, Link(LinkCRGS, LinkGreyFriars, LinkMScIndividualProjectPresentation))
 
 educationSection :: (ArrowXml a) => a n XmlTree
 educationSection = section [cls "educationSection"]
@@ -34,8 +34,8 @@ msc =
   , txt " at "
   , mkelem "strong" [] [link "http://www3.imperial.ac.uk/" "Imperial College London"]
   , txt ". "
-  , txt "Individual project covered "
-  , q "verifying a balanced-tree index implementation in VeriFast" -- TODO: link
+  , txt "Individual project: "
+  , mk "q" [ mkLink LinkMScIndividualProjectPresentation ]
   , txt "."
   ]
 

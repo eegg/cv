@@ -2,7 +2,7 @@ module ExperienceSection (experienceSection) where
 
 import Text.XML.HXT.Core (XmlTree, ArrowXml, sattr, txt, mkelem)
 import Common (mk, h2, ul, strong, link, cls, section, attrVal, trs, csvAnd, em, p, q)
-import Links (mkLink, Link(LinkYUDU, LinkSoftwire, LinkJava, LinkEnterpriseJavaBeans, LinkSpring, LinkAS3, LinkGit, LinkLexdenMontessori, LinkHSK, LinkUBM, LinkHSBC))
+import Links (mkLink, Link(LinkYUDU, LinkSoftwire, LinkJava, LinkEnterpriseJavaBeans, LinkSpring, LinkAS3, LinkGit, LinkLexdenMontessori, LinkHSK, LinkUBM, LinkHSBC, LinkCSCI, LinkCaringHomes, LinkGilgilTrust, LinkPembrokeHouse))
 
 experienceSection :: (ArrowXml a) => a n XmlTree
 experienceSection = section [cls "experienceSection"]
@@ -48,14 +48,14 @@ lm =
 gilgilTrust =
   attrVal [txt "2012–present"] [] $
   [ txt "Branding, marketing consultancy, and web design for "
-  , mk "strong" [link "http://gilgiltrust.org.uk/" "The Gilgil Trust"]
+  , mk "strong" [mkLink LinkGilgilTrust]
   , txt ", an organization providing young people around the town of Gilgil in Kenya with shelter, health-care, and help in their education and careers."
   ]
 
 pembrokeHouse =
   attrVal [txt "2010"] [] $
   [ txt "Branding for "
-  , mk "strong" [link "http://www.pembrokehouse.sc.ke/" "Pembroke House"]
+  , mk "strong" [mkLink LinkPembrokeHouse]
   , txt " a private Kenyan prep school."
   , txt " In the words of their Commercial Director,"
   , mk "blockquote"
@@ -80,14 +80,14 @@ hsk =
 
 caringHomesDB =
   attrVal [txt "2009"] []
-  [ txt "Developing an internal database-driven system for managing care homes and ", link "http://en.wikipedia.org/wiki/CSCI" "CSCI reports"
-  , txt " for ", mk "strong" [link "http://www.caringhomes.org/" "Caring Homes"]
+  [ txt "Developing an internal database-driven system for managing care homes and ", mkLink LinkCSCI
+  , txt " for ", mk "strong" [mkLink LinkCaringHomes]
   , txt "."
   ]
 
 caringHomesVarious =
   attrVal [txt "2008"] []
-  [ txt "Various responsibilities at ", mk "strong" [link "http://www.caringhomes.org/" "Caring Homes"]
+  [ txt "Various responsibilities at ", mk "strong" [mkLink LinkCaringHomes]
   , txt ", including accountancy and financial planning, due diligence, insurance of plant, and remote I.T. support."
   ]
 
